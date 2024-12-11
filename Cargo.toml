@@ -1,0 +1,15 @@
+[package]
+name = "kc-auth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.9", features = ["macros"] }
+axum-keycloak-auth = "0.6.0"
+dotenv = "0.15.0"
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.133"
+time = { version = "0.3.37", features = ["macros"] }
+tokio = { version = "1.42.0", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["time", "local-time"] }
